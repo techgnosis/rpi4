@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+# this does not work on macOS. Use ubuntu.sh to run this in a Ubuntu container
+
 export PASSWORD=$1
 USERNAME=$2
 
