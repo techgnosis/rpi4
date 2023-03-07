@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+export PASSWORD=$1
+USERNAME=$2
 
-PASSWORD=$(echo 'mypassword' | openssl passwd -6 -stdin)
-echo "myuser:${PASSWORD}" > userconf
+ENCRYPTED_PASSWORD=$(echo "${PASSWORD}" | openssl passwd -6 -stdin)
+echo ${USERNAME}:${ENCRYPTED_PASSWORD} > userconf
