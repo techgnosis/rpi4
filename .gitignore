@@ -1,2 +1,4 @@
 userconf
 .bash_history
+.envrc
+kubeconfig
