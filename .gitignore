@@ -2,3 +2,4 @@ userconf
 .bash_history
 .envrc
 kubeconfig
+.DS_Store
